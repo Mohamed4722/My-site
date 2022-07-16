@@ -1,0 +1,198 @@
+/* body{
+  margin : 0;
+}
+
+h1{
+  margin-top: 0;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+
+ ici je change la position avec la marge
+
+.top{
+  background-color: #30E3CA;
+  margin-left: 100px;
+}
+
+ici je change la position avec l'attribut position si je dis une marge par la droite, le div va sortir de l'écran!
+la position relative : par rapport à sa position sans aucune aucune regle css ... et "absolu" c une regle par rapport à son élement parent
+
+.mid{
+  background-color: #11999E;
+  position: relative;
+  left: 300px;
+  display: inline-block;
+}
+
+ ici je change la position avec l'attribut position absolu
+.bot{
+  background-color: #40514E;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  left: 510px;
+  display: inline-block;
+}
+
+.prog{
+  text-decoration: underline;
+}
+
+*/
+
+
+ body{
+  margin : 0;
+  text-align: center;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Merriweather', serif;
+  color: #40514E
+}
+
+/* rappel: 1em = 100% = 16px => 562,5% = 90px = 5.625 em pour avoir des polices dynamiques
+attention car les em et % s'additionnenet par exemple s'il y a une valeur dans l'élément body.... pour les px, pas d'addition
+car ce sont des tailles statiques */
+
+h1{
+  color: #66BFBF;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursif;
+  /* font-size: 562.5%; */
+  font-size: 5.626rem; /* rem est root em... donc ils ne s'addionnent plus comme les em */
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+h2{
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+h3{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  line-height: 2;
+}
+
+hr{
+  border: dotted #B8FFF9 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.top{
+  background-color: #B8FFF9;
+  padding-top: 100px;
+  position: relative; /* on le met en relatif car on veut que les nuages soit en positionnement absolu par rapport à ca */
+}
+
+.homme_mys{
+  width: 400px;
+  height: 400px;
+  padding-top: 25px;
+}
+
+.civil_engineer{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.Computer-science{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.prog{
+  text-decoration: underline;
+}
+
+.top-cloud{
+  position: absolute;
+  top: 50px;
+  right: 250px;
+}
+
+.bot-cloud{
+  position: absolute;
+  left: 300px;
+  bottom:350px;
+
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto 40px auto;
+}
+
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.bottom-container{
+  padding: 50px 0 20px 0;
+  background-color: #66BFBF;
+  margin: 50px auto auto auto;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+
+.copyright{
+  color: #EAF6F6;
+  font-size: 1rem;
+}
